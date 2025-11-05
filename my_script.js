@@ -2,7 +2,7 @@ class loker{
     constructor(conf){
         this.gsheet = conf.gsheet
         this.data = [];
-        this.id = conf.id? conf.id + 1 : "";
+        this.id = conf.id? conf.id : "";
     }
     async display(){
         let conn = await this.gsheet.connect()
